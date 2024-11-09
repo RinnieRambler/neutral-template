@@ -40,56 +40,64 @@
 
 </head>
 
-<body>
+<body class="bg-[#f4eee0]">
 <!--------Header banner --------->
-<header class="p-8" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-  <nav class="">
-    <a>Nav 1</a>
-    <a>Nav 2</a>
-    <a>Nav 3</a>
-    <a>Logo</a>
-    <a>Nav 4</a>
-    <a>Nav 5</a>
-    <a>Nav 6</a>
+<header class="p-8 min-h-screen bg-cover bg-center flex flex-col" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+  <nav class="grid grid-cols-3 uppercase">
+    <div class="flex items-center justify-around">
+      <a>Nav 1</a>
+      <a>Nav 2</a>
+      <a>Nav 3</a>
+    </div>
+    <div class="text-center">
+      <a class="text-white text-xl">Logo</a>
+    </div>
+    <div class="flex items-center justify-around">
+      <a>Nav 4</a>
+      <a>Nav 5</a>
+      <a>Nav 6</a>
+    </div>
   </nav>
-  <div class="text-center p-8">
-    <hr>
-    <h1>This is a heading</h1>
-    <p>This is a subheading</p>
+  <div class="text-center text-white p-8 m-auto">
+    <div>
+      <hr>
+      <h1 class="uppercase text-6xl p-4">This is a heading</h1> 
+      <p class="text-xl">This is a subheading</p>
+    </div>
   </div>
 </header>
 
 <!-----------Our Services section ---------->
 
-<section class="p-8">
-  <h2>Our Services</h2>
-  <div class="grid grid-cols-3 gap-4">
+<section class="p-20">
+  <h2 class="uppercase py-4 text-3xl">Our Services</h2>
+  <div class="grid grid-cols-3 gap-6 text-center">
     <div>
-      <div></div>
-      <h3>Duis Aute</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+      <div class="aspect-square bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+      <h3 class="uppercase tracking-wider py-4">Duis Aute</h3>
+      <p class="border-t-2  border-black p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
     </div>
     <div>
-      <div></div>
-      <h3>Duis Aute</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+      <div class="aspect-square bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+      <h3 class="uppercase tracking-wider py-4">Duis Aute</h3>
+      <p class="border-t-2  border-black py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
     </div>
     <div>
-      <div></div>
-      <h3>Duis Aute</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
+      <div class="aspect-square bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+      <h3 class="uppercase tracking-wider py-4">Duis Aute</h3>
+      <p class="border-t-2  border-black p-4"x>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint tempora excepturi maxime reprehenderit obcaecati commodi, consectetur cumque quis asperiores, ea nihil, delectus autem omnis debitis animi ipsam. Beatae, exercitationem!</p>
     </div>
   </div>
 </section>
 
 <!-----------bg image with overlap text box -------------->
 
-<section class="min-h-screen grid custom-grid" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+<section class="min-h-screen border-y border-black grid custom-grid" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
   <div></div>
-  <div class="bg-slate-500 p-8">
-    <h2>Who are we</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt commodi voluptas hic ipsum, dolorum dolores. Ea voluptatem accusantium temporibus ullam! Repudiandae rerum eius culpa numquam architecto doloremque corporis et!</p>
-    <button>Find out more</button>
+  <div class="bg-[#f4eee0] p-8 flex flex-col justify-center">
+    <h2 class="text-3xl uppercase">Who are we</h2>
+    <p class="text-sm py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt commodi voluptas hic ipsum, dolorum dolores. Ea voluptatem accusantium temporibus ullam! Repudiandae rerum eius culpa numquam architecto doloremque corporis et!</p>
+    <button class="text-sm uppercase border border-black max-w-36">Find out more</button>
   </div>
   <div></div>
 </section>
@@ -97,16 +105,16 @@
 <!----------brand name section ---------->
 
 <section class="grid grid-cols-6">
-  <p>Brand name</p>
-  <p>Brand name</p>
-  <p>Brand name</p>
-  <p>Brand name</p>
-  <p>Brand name</p>
-  <p>Brand name</p>
+  <p class="text-center border-r border-b border-black p-2">Brand name</p>
+  <p class="text-center border-r border-b border-black p-2">Brand name</p>
+  <p class="text-center border-r border-b border-black p-2">Brand name</p>
+  <p class="text-center border-r border-b border-black p-2">Brand name</p>
+  <p class="text-center border-r border-b border-black p-2">Brand name</p>
+  <p class="text-center border-b border-black">Brand name</p>
 </section>
 
 <!---------- Gallery section ------------>
-<section class="p-8">
+<section class="p-20">
   <div class="text-center max-w-96">
     <h2>Duis aute irure</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ad ea adipisci consequatur impedit accusantium molestias deserunt eum nam eius. Nisi laudantium soluta magnam quod magni itaque harum? Assumenda, expedita.</p>
@@ -132,7 +140,7 @@
 </section>
 
 <!------------ footer section ----------->
-<footer class="grid grid-cols-4 p-8">
+<footer class="grid grid-cols-4 p-20">
   <div>
     <h4>Lorem ipsum</h4>
     <a>dolor sit amet</a>
