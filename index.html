@@ -42,7 +42,7 @@
 
 <body class="bg-[#f4eee0]">
 <!--------Header banner --------->
-<header class="p-8 min-h-screen bg-cover bg-center flex flex-col" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+<header class="p-8 min-h-screen bg-cover bg-center flex flex-col relative" style="background-image: url('https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
   <nav class="grid md:grid-cols-3 uppercase">
     <div class="hidden md:flex items-center justify-around">
       <a>Nav 1</a>
@@ -57,6 +57,19 @@
       <a>Nav 5</a>
       <a>Nav 6</a>
     </div>
+    <div class="burger-button md:hidden">
+      <span class="burger-top"></span>
+      <span class="burger-middle"></span>
+      <span class="burger-bottom"></span>
+    </div>
+    <div class="burger-menu md:hidden">
+      <a href="">Nav 1</a>
+      <a href="">Nav 2</a>
+      <a href="">Nav 3</a>
+      <a href="">Nav 4</a>
+      <a href="">Nav 5</a>
+      <a href="">Nav 6</a>
+   </div>
   </nav>
   <div class="text-center text-white p-8 m-auto">
     <div>
@@ -143,17 +156,19 @@
   <div class="p-20">
     <h2 class="uppercase text-2xl py-4">contact us</h2>
     <form class="">
-      <input type="text" id="name" name="name" placeholder="Name" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:uppercase placeholder:text-sm mb-4">
-      <input type="email" id="Email" name="Email" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:uppercase placeholder:text-sm mb-4" placeholder="Email" required>
+      <input type="text" id="name" name="name" placeholder="Name" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none">
+      <input type="email" id="Email" name="Email" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none" placeholder="Email" required>
       <label for="Message" class="block uppercase text-sm text-black">Your message</label>
-      <textarea id="Message" name="Message" class="block w-full bg-transparent border border-black mb-4" rows="6" maxlength="3000" required></textarea>
-      <input type="submit" value="Send" class="border border-black py-2 px-8 uppercase text-sm">
+      <textarea id="Message" name="Message" class="block w-full bg-transparent border border-black mb-4 focus:outline-none focus-visible:outline-none resize-none" rows="6" maxlength="3000" required></textarea>
+      <div class="text-right">
+        <input type="submit" value="Send" class="border border-black py-2 px-8 uppercase text-sm">
+      </div>
     </form>
   </div>
 </section>
 
 <!------------ footer section ----------->
-<footer class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 p-20 border-b border-black">
+<footer class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 p-20 border-b border-black">
   <div class="">
     <h4 class="uppercase py-4">Lorem ipsum</h4>
     <a class="uppercase">dolor sit amet</a>
@@ -177,7 +192,7 @@
   </div>
   <div class="">
     <h4 class="uppercase py-4">subscribe to our newsletter</h4>
-    <input class="min-w-full">
+    <input class="min-w-full bg-inherit border border-black">
     <button class="py-4">
       subscribe
     </button>
@@ -187,6 +202,7 @@
   </div>
 </footer>
   
+<script src="/main.js"></script>
 
 </body>
 
